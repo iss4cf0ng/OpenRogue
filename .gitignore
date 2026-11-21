@@ -1,0 +1,48 @@
+# .gitignore
+
+# CMake build output directories (including generated solution files)
+out/
+build/
+build_*/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+install_manifest.txt
+
+# Visual Studio cache and user-specific files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.slnx.docstates
+
+# C++ build artifacts and debug files
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+*.obj
+*.o
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.dll
+*.exe
+*.tlog
+*.log
+*.idb
+*.ipch
+*.pch
+*.ncb
+*.sdf
+*.opensdf
+*.db
+*.opendb
+*.VC.db
+*.VC.VC.opendb
