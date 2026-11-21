@@ -21,7 +21,7 @@ if(EXISTS "${CMAKE_SOURCE_DIR}/gui/main_gui.cpp")
     if(TARGET SharedLib)
         target_link_libraries(MainApp PRIVATE SharedLib)
     endif()
-    # x86 時將 GUI 子系統設為 XP (5.01)
+
     if(MSVC AND CMAKE_SIZEOF_VOID_P EQUAL 4)
         target_link_options(MainApp PRIVATE "/SUBSYSTEM:WINDOWS,5.01")
     endif()
