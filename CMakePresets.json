@@ -15,7 +15,10 @@
       },
       "binaryDir": "${sourceDir}/out/build/${presetName}",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release"
+        "CMAKE_BUILD_TYPE": "Release",
+        "BUILD_DRIVERS": "ON",
+        "WDK_ROOT": "C:/Program Files (x86)/Windows Kits/10",
+        "WDK_VERSION": "10.0.22621.0"
       }
     },
     {
@@ -32,7 +35,10 @@
       },
       "binaryDir": "${sourceDir}/out/build/${presetName}",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release"
+        "CMAKE_BUILD_TYPE": "Release",
+        "BUILD_DRIVERS": "ON",
+        "WDK_ROOT": "C:/Program Files (x86)/Windows Kits/10",
+        "WDK_VERSION": "10.0.28000.0"
       }
     }
   ],
