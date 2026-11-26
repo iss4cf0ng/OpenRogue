@@ -1,3 +1,6 @@
+// dirver.c
+// BYOVD test
+
 #include <ntddk.h>
 
 #define DEVICE_NAME_STR L"\\Device\\VulnSim"
@@ -7,7 +10,10 @@
 
 VOID VulnSimUnload(_In_ PDRIVER_OBJECT DriverObject)
 {
+	UNICODE_STRING symLink;
+	RtlInitUnicodeString(&symLink, SYMLINK_NAME_STR);
 
+	IoDeleteSymbolicLink(&symLink);
 }
 
 NTSTATUS VulnSimCreateClose(_In_ PDEVICE_OBJECT DeviceObject, _Inout_ PIRP Irp)
